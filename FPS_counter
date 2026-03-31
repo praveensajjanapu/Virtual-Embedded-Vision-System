@@ -7,3 +7,9 @@ prev = curr
 
 cv2.putText(frame, f"FPS: {int(fps)}", (20,40),
             cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 2)
+
+
+
+#  save detedcted frames
+
+cv2.imwrite("output.jpg", frame)
